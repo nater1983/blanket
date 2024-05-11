@@ -1,7 +1,7 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 gnome = import('gnome')
 
-blueprint = find_program('blueprint-compiler')
+blueprint = find_program('/usr/bin/blueprint-compiler')
 blueprints = custom_target('blueprints',
   input: files(
     'about.blp',
